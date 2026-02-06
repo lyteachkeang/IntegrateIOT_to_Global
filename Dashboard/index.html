@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <title>Temperature & Humidity Dashboard</title> 
+  <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+  <header> 
+    <h1>     Temperature &   Humidity Dashboard</h1> 
+  </header> 
+  <div class="filters"> 
+    <label for="deviceSelect">Device:</label> 
+    <select id="deviceSelect"></select> 
+    <label for="timeFilter">Time Range:</label> 
+    <select id="timeFilter"> 
+      <option value="all">All Data</option> 
+      <option value="1h">Last 1 Hour</option> 
+      <option value="today">Today</option> 
+    </select> 
+  </div> 
+  <table id="sensorTable" class="table-template"> 
+    <thead> 
+      <tr> 
+        <th>Timestamp</th> 
+        <th>Temperature (°C)</th> 
+        <th>Humidity (%)</th> 
+      </tr> 
+    </thead> 
+    <tbody> 
+      <!-- Data rows will be inserted here --> 
+    </tbody>
+     </table> 
+  <script src="script.js"></script> 
+</body> 
+</html> 
